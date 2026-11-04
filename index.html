@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remax Rain — Yakında</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red:  #DC1C2E;
+      --blue: #003DA5;
+      --navy: #060C1A;
+      --white: #FFFFFF;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 15% 10%,  rgba(0,61,165,.20) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 55% at 85% 90%,  rgba(220,28,46,.13) 0%, transparent 55%),
+        #060C1A;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .top-rule {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--blue) 0%, var(--red) 50%, var(--blue) 100%);
+    }
+
+    .logo-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    /* Brand lockup */
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-wrap svg {
+      width: clamp(130px, 20vw, 190px);
+      height: auto;
+    }
+
+    .brand-sep {
+      width: 1px;
+      height: 2em;
+      background: rgba(255,255,255,.2);
+      flex-shrink: 0;
+    }
+
+    .brand-rain {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: clamp(.9rem, 2vw, 1.2rem);
+      letter-spacing: .45em;
+      color: rgba(255,255,255,.45);
+    }
+
+    .divider {
+      width: 56px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--red), transparent);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .55rem 1.3rem;
+      border: 1px solid rgba(220,28,46,.35);
+      border-radius: 100px;
+      background: rgba(220,28,46,.07);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+    }
+
+    .badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    .headline {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 660px;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: var(--red);
+    }
+
+    .sub {
+      max-width: 480px;
+      font-size: clamp(.875rem, 2vw, 1rem);
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,.48);
+    }
+
+    .tagline {
+      font-size: clamp(.82rem, 2vw, .95rem);
+      font-weight: 300;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.38);
+    }
+
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .85rem;
+      font-weight: 400;
+      letter-spacing: .05em;
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .contact-item:hover { color: var(--white); }
+    .contact-item svg { flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+
+<div class="wrapper">
+  <div class="top-rule"></div>
+
+  <div class="logo-card">
+
+    <!-- Brand lockup: official RE/MAX logo + Rain -->
+    <div class="brand-lockup">
+      <div class="logo-wrap">
+        <svg viewBox="0 0 258.88 47.625" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(226.83 29.401)"><g transform="matrix(6.5934 0 0 6.5934 1268.8 164.45)"><path d="m-221.33-26.967v-0.05292c0-0.68792-0.21166-1.27-0.635-1.6669-0.47625-0.44979-1.1906-0.68792-2.0373-0.68792h-2.831v7.1702h1.614v-2.3283h0.92604l1.3758 2.3283h1.8256l-1.5875-2.6458c0.60854-0.29104 1.3494-0.87312 1.3494-2.1167zm-1.614 0.02646c0 0.66146-0.44979 1.0583-1.1906 1.0583h-1.0848v-2.0902h1.0848c0.76729 0 1.1906 0.34396 1.1906 1.0319zm24.289-2.4606-2.6988 7.1967h1.614l0.55563-1.5346h2.5135l0.55562 1.5346h1.6669l-2.6988-7.1967zm1.4817 4.3127h-1.5346l0.76729-2.196zm7.4083-0.76729 2.1431-3.4925h-1.7727l-1.27 2.2754-1.2435-2.2754h-1.8521l2.1167 3.519-2.2225 3.6512h1.7727l1.3494-2.4077 1.3494 2.4077h1.8256zm-28.258 2.2754v-1.5346h2.884v-1.3758h-2.884v-1.4817h3.2544v-1.4023h-4.8419v7.1702h3.0162l0.74084-1.3758zm13.758-5.7944-1.614 2.3283-1.6404-2.3283h-0.0265l-1.6404 3.1221v4.0481h1.561v-4.445l1.6933 2.196v0.02646h0.0794l1.7198-2.2225v4.445h1.561v-7.1702z" stroke-width=".26458" fill="#dc1c2e"/><polygon transform="matrix(.26458 0 0 .26458 -226.83 -29.693)" points="59.2 1.2 44.9 28.3 52.3 28.3 66.6 1.2" fill="#003da5"/></g></g>
+        </svg>
+      </div>
+      <div class="brand-sep"></div>
+      <span class="brand-rain">RAIN</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Badge -->
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Çok Yakında Hizmetinizde
+    </div>
+
+    <!-- Headline -->
+    <h1 class="headline">
+      Yeni bir <em>deneyim</em> için<br>sizi bekliyoruz.
+    </h1>
+
+    <!-- Sub -->
+    <p class="sub">
+      Web sitemiz yenileniyor. Yakın zamanda çok daha güçlü bir içerikle
+      karşınızda olacağız. Bizimle iletişime geçmekten çekinmeyin.
+    </p>
+
+    <!-- Tagline -->
+    <p class="tagline">Güven · Kalite · Uzmanlık</p>
+
+    <!-- Contact — email only -->
+    <div class="contact-strip">
+      <a class="contact-item" href="mailto:info@remaxrain.com.tr">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        info@remaxrain.com.tr
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
